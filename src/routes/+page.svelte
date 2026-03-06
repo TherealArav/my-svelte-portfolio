@@ -125,7 +125,7 @@
 			</div>
 			<div class="flex justify-center lg:justify-end">
 				<img
-					src="/profile.jpg"
+					src="/profile1.jpg"
 					alt="Portrait of Arav Goyal"
 					class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl"
 				/>
