@@ -97,8 +97,7 @@
   let visibleCertificates = $derived(showAll ? certificates : certificates.slice(0,3));
 
 </script>
-
-<main class="bg-slate-950">
+<main class="bg-slate-950 h-screen overflow-y-auto no-scrollbar">
 	<section class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 		<h1 class="mb-6 text-6xl font-extrabold tracking-tight text-white md:text-8xl">Arav Goyal</h1>
 		<h2 class="text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">
