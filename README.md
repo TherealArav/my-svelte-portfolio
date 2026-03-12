@@ -1,6 +1,7 @@
 # Welcome 👏
 
 Hi, I am Arav. Welcome to my portfolio website! I am an AI engineer who researches and builds accessible technologies. I primarily work with Computer Vision and Natural Language Processing. I hope you enjoy exploring my work!
+Visit my website [here](https://aravgoyalportfolio.com/)
 
 ## Setup Project Guide
 
