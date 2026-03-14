@@ -28,7 +28,7 @@
 			tags: ['Accessibility', 'Ai', 'MachineLearning', 'ISDIA2026']
 		},
 		{
-			href: 'https://github.com/TherealArav/GeoNavision.git',
+			href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
 			title: 'GeoNavision',
 			type: 'Software',
 			description:
@@ -230,3 +230,4 @@
 		</div>
 	</footer>
 </main>
+
