@@ -7,7 +7,7 @@ export async function handle({event, resolve}) {
     const auth_header = event.request.headers.get('x-portfolio-secret');
 
     if (auth_header !== wb_secret) {
-        throw redirect(301, env.WEB_DOMAIN);
+        throw redirect(301, env.WEB_DOMAIN || 'https://aravgoyal.com');
     }
 
     const response = await resolve(event);
