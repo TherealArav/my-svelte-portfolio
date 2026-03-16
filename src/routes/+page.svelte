@@ -54,6 +54,14 @@
 	];
 
 	const certificates = [
+		{	date: "Feb 2026",
+			issuer: "University of Wollongong Dubai",
+			title: "ISDIA 2026 Conference Presentation",
+			badge: "Certificate",
+			description: "Presented research on AI-powered navigation for visually impaired individuals at ISDIA 2026 in Dubai.",
+			url: "https://drive.google.com/file/d/1WtL-FQUXskYZJIf4x_yvwKqotyzRL7X4/view?usp=sharing"
+
+		},
 		{
 			date: 'Oct 2025',
 			issuer: 'DeepLearning.AI',
