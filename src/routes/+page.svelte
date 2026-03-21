@@ -15,6 +15,7 @@
 		{ name: 'Pandas', iconCode: 'simple-icons:pandas' },
 		{ name: 'NumPy', iconCode: 'logos:numpy' },
 		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql' },
+		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface' },
 		{ name: 'Git', iconCode: 'logos:git-icon' }
 	];
 
