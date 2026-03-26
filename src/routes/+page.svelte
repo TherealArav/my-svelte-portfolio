@@ -2,7 +2,9 @@
 	import ProjectCard from '$lib/ProjectCard.svelte';
 	import TechnologyBadge from '$lib/TechnologyBadge.svelte';
 	import CertificateItem from '$lib/CertificateItem.svelte';
-  import SocialsBadge from '$lib/SocialsBadge.svelte';
+  	import SocialsBadge from '$lib/SocialsBadge.svelte';
+	import BackToTop from '$lib/BackToTop.svelte';
+
 
 	const name = 'Arav Goyal';
 	const title = 'AI & Big Data Engineer';
@@ -16,7 +18,7 @@
 		{ name: 'NumPy', iconCode: 'logos:numpy' },
 		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql' },
 		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface' },
-		{ name: 'Git', iconCode: 'logos:git-icon' }
+		{ sname: 'Git', iconCode: 'logos:git-icon' }
 	];
 
 	const projects = [
@@ -109,9 +111,25 @@
 	// Show all certificates
 	let showAll = $state(false);
 	let visibleCertificates = $derived(showAll ? certificates : certificates.slice(0, 3));
+
+	let mainScrollY = $state(0);
+    let scrollContainer = $state();
+
+	function handleScrollToTop() {
+        if (scrollContainer) {
+            scrollContainer.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
 </script>
 
-<main class="no-scrollbar h-screen overflow-y-auto bg-slate-950">
+<main 
+    bind:this={scrollContainer} 
+    onscroll={(e) => mainScrollY = e.currentTarget.scrollTop} 
+    class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-950"
+>
 	<section class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 		<h1 class="mb-6 text-6xl font-extrabold tracking-tight text-white md:text-8xl">{name}</h1>
 		<h2 class="mb-24 text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">{title}</h2>
@@ -238,5 +256,7 @@
 			</p>
 		</div>
 	</footer>
+	<BackToTop scrollY={mainScrollY} scrollToTopAction={handleScrollToTop} />
 </main>
+
 
