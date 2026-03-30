@@ -18,7 +18,7 @@
 		{ name: 'NumPy', iconCode: 'logos:numpy' },
 		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql' },
 		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface' },
-		{ sname: 'Git', iconCode: 'logos:git-icon' }
+		{ name: 'Git', iconCode: 'logos:git-icon' }
 	];
 
 	const projects = [
@@ -154,11 +154,11 @@
 				</p>
 			</div>
 			<div class="flex justify-center lg:justify-end">
-				<img
-					src="/profile1.jpg"
-					alt="Portrait of Arav Goyal"
-					class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl"
-				/>
+			<img
+				src="/profile1.jpg"
+				alt="Portrait of Arav Goyal"
+				class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl transition-all duration-250 hover:-translate-y-3 hover:scale-105 hover:border-teal-400"
+		/>
 			</div>
 		</div>
 	</section>
