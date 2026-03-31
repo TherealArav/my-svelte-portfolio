@@ -9,16 +9,16 @@
 	const name = 'Arav Goyal';
 	const title = 'AI & Big Data Engineer';
 	const techStack = [
-		{ name: 'Python', iconCode: 'logos:python' },
-		{ name: 'TensorFlow', iconCode: 'logos:tensorflow' },
-		{ name: 'PyTorch', iconCode: 'logos:pytorch-icon' },
-		{ name: 'LangChain', iconCode: 'simple-icons:langchain' },
-		{ name: 'Scikit-learn', iconCode: 'logos:scikit-learn' },
-		{ name: 'Pandas', iconCode: 'simple-icons:pandas' },
-		{ name: 'NumPy', iconCode: 'logos:numpy' },
-		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql' },
-		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface' },
-		{ name: 'Git', iconCode: 'logos:git-icon' }
+		{ name: 'Python', iconCode: 'logos:python', url: 'https://www.python.org/' },
+		{ name: 'TensorFlow', iconCode: 'logos:tensorflow', url: 'https://www.tensorflow.org/' },
+		{ name: 'PyTorch', iconCode: 'logos:pytorch-icon', url: 'https://pytorch.org/' },
+		{ name: 'LangChain', iconCode: 'simple-icons:langchain', url: 'https://python.langchain.com/' },
+		{ name: 'Scikit-learn', iconCode: 'logos:scikit-learn', url: 'https://scikit-learn.org/' },
+		{ name: 'Pandas', iconCode: 'simple-icons:pandas', url: 'https://pandas.pydata.org/' },
+		{ name: 'NumPy', iconCode: 'logos:numpy', url: 'https://numpy.org/' },
+		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql', url: 'https://www.mysql.com/' },
+		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface', url: 'https://huggingface.co/' },
+		{ name: 'Git', iconCode: 'logos:git-icon', url: 'https://git-scm.com/'}
 	];
 
 	const projects = [
@@ -185,7 +185,7 @@
 			</h2>
 			<ul class="flex flex-wrap gap-4">
 				{#each techStack as tech}
-					<TechnologyBadge name={tech.name} iconCode={tech.iconCode} />
+					<TechnologyBadge name={tech.name} iconCode={tech.iconCode} url={tech.url}/>
 				{/each}
 			</ul>
 		</div>
