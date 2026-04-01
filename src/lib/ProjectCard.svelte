@@ -3,7 +3,10 @@
 </script>
 
 <li>
-  <a {href} class="group flex flex-col gap-4 rounded-xl p-4 -ml-4 transition-colors hover:bg-slate-900/80" target="_blank">
+  <a {href} 
+  class="group flex flex-col gap-4 rounded-xl p-4 -ml-4 transition-colors hover:bg-slate-900/80" 
+  target="_blank" 
+  rel="noopener noreferrer">
     <div class="flex flex-col gap-3">
       <div class="flex items-center justify-between gap-4">
         <h3 class="text-2xl font-bold text-slate-100 group-hover:text-teal-400 transition-colors flex flex-wrap items-center gap-2">
