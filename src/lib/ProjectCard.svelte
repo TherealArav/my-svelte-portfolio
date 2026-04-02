@@ -3,7 +3,8 @@
 </script>
 
 <li>
-  <a {href} 
+  <a 
+  href={href} 
   class="group flex flex-col gap-4 rounded-xl p-4 -ml-4 transition-colors hover:bg-slate-900/80" 
   target="_blank" 
   rel="noopener noreferrer">

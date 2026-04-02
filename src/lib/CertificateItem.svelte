@@ -25,6 +25,7 @@
     <p class="text-xl leading-relaxed text-slate-300">
       {description}
       {#if url}
+      <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
         <a 
           href={url} 
           target="_blank" 

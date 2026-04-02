@@ -168,7 +168,7 @@
 			<ul
 				class="ml-6 list-outside list-disc space-y-5 text-xl font-medium tracking-wide text-slate-200 marker:text-teal-500 md:text-2xl"
 			>
-				{#each skills as skill}
+				{#each skills as skill (skill)}
 					<li>{skill}</li>
 				{/each}
 			</ul>
@@ -184,7 +184,7 @@
 				Technologies
 			</h2>
 			<ul class="flex flex-wrap gap-4">
-				{#each techStack as tech}
+				{#each techStack as tech (tech.url)}
 					<TechnologyBadge name={tech.name} iconCode={tech.iconCode} url={tech.url}/>
 				{/each}
 			</ul>
@@ -199,7 +199,7 @@
 				</p>
 			</div>
 			<ul class="flex flex-col gap-14">
-				{#each projects as project}
+				{#each projects as project (project.href)}
 					<ProjectCard
 						href={project.href}
 						title={project.title}
@@ -220,7 +220,7 @@
 				Certificates & Education
 			</h2>
 			<ul class="flex flex-col">
-				{#each visibleCertificates as cert}
+				{#each visibleCertificates as cert (cert.url)}
 					<CertificateItem
 						date={cert.date}
 						issuer={cert.issuer}
