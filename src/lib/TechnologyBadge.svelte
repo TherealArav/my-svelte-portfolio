@@ -5,6 +5,7 @@
 
 <li>
   <a 
+    // eslint-disable-next-line svelte/no-navigation-without-resolve
     href={url} 
     target="_blank" 
     rel="noopener noreferrer"

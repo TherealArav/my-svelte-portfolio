@@ -12,12 +12,12 @@
 		{ name: 'Python', iconCode: 'logos:python', url: 'https://www.python.org/' },
 		{ name: 'TensorFlow', iconCode: 'logos:tensorflow', url: 'https://www.tensorflow.org/' },
 		{ name: 'PyTorch', iconCode: 'logos:pytorch-icon', url: 'https://pytorch.org/' },
-		{ name: 'LangChain', iconCode: 'simple-icons:langchain', url: 'https://python.langchain.com/' },
-		{ name: 'Scikit-learn', iconCode: 'logos:scikit-learn', url: 'https://scikit-learn.org/' },
-		{ name: 'Pandas', iconCode: 'simple-icons:pandas', url: 'https://pandas.pydata.org/' },
+		{ name: 'LangChain', iconCode: 'streamline-color:link-chain', url: 'https://python.langchain.com/' },
+		{ name: 'Scikit-learn', iconCode: 'devicon:scikitlearn', url: 'https://scikit-learn.org/' },
+		{ name: 'Pandas', iconCode: 'devicon:pandas', url: 'https://pandas.pydata.org/' },
 		{ name: 'NumPy', iconCode: 'logos:numpy', url: 'https://numpy.org/' },
 		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql', url: 'https://www.mysql.com/' },
-		{ name: "Hugging Face", iconCode: 'simple-icons:huggingface', url: 'https://huggingface.co/' },
+		{ name: "Hugging Face", iconCode: 'fluent-emoji-flat:hugging-face', url: 'https://huggingface.co/' },
 		{ name: 'Git', iconCode: 'logos:git-icon', url: 'https://git-scm.com/'}
 	];
 
