@@ -25,8 +25,8 @@
     <p class="text-xl leading-relaxed text-slate-300">
       {description}
       {#if url}
-      <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-        <a 
+        <a
+          // eslint-disable-next-line svelte/no-navigation-without-resolve
           href={url} 
           target="_blank" 
           rel="noopener noreferrer" 
