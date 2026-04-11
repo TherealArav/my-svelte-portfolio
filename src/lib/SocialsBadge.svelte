@@ -1,7 +1,8 @@
 <!-- Svelte Component: SocialsBadge.svelte -->
 <script>
-    import Icon from '@iconify/svelte';
+	import Icon from '@iconify/svelte';
 </script>
+
 <ul class="flex flex-wrap justify-center gap-6">
 	<li>
 		<a

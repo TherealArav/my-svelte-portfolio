@@ -2,9 +2,8 @@
 	import ProjectCard from '$lib/ProjectCard.svelte';
 	import TechnologyBadge from '$lib/TechnologyBadge.svelte';
 	import CertificateItem from '$lib/CertificateItem.svelte';
-  	import SocialsBadge from '$lib/SocialsBadge.svelte';
+	import SocialsBadge from '$lib/SocialsBadge.svelte';
 	import BackToTop from '$lib/BackToTop.svelte';
-
 
 	const name = 'Arav Goyal';
 	const title = 'AI & Big Data Engineer';
@@ -12,13 +11,21 @@
 		{ name: 'Python', iconCode: 'logos:python', url: 'https://www.python.org/' },
 		{ name: 'TensorFlow', iconCode: 'logos:tensorflow', url: 'https://www.tensorflow.org/' },
 		{ name: 'PyTorch', iconCode: 'logos:pytorch-icon', url: 'https://pytorch.org/' },
-		{ name: 'LangChain', iconCode: 'streamline-color:link-chain', url: 'https://python.langchain.com/' },
+		{
+			name: 'LangChain',
+			iconCode: 'streamline-color:link-chain',
+			url: 'https://python.langchain.com/'
+		},
 		{ name: 'Scikit-learn', iconCode: 'devicon:scikitlearn', url: 'https://scikit-learn.org/' },
 		{ name: 'Pandas', iconCode: 'devicon:pandas', url: 'https://pandas.pydata.org/' },
 		{ name: 'NumPy', iconCode: 'logos:numpy', url: 'https://numpy.org/' },
 		{ name: 'SQL', iconCode: 'vscode-icons:file-type-sql', url: 'https://www.mysql.com/' },
-		{ name: "Hugging Face", iconCode: 'fluent-emoji-flat:hugging-face', url: 'https://huggingface.co/' },
-		{ name: 'Git', iconCode: 'logos:git-icon', url: 'https://git-scm.com/'}
+		{
+			name: 'Hugging Face',
+			iconCode: 'fluent-emoji-flat:hugging-face',
+			url: 'https://huggingface.co/'
+		},
+		{ name: 'Git', iconCode: 'logos:git-icon', url: 'https://git-scm.com/' }
 	];
 
 	const projects = [
@@ -57,13 +64,14 @@
 	];
 
 	const certificates = [
-		{	date: "Feb 2026",
-			issuer: "University of Wollongong Dubai",
-			title: "ISDIA 2026 Conference Presentation",
-			badge: "Certificate",
-			description: "Presented research on AI-powered navigation for visually impaired individuals at ISDIA 2026 in Dubai.",
-			url: "https://drive.google.com/file/d/1WtL-FQUXskYZJIf4x_yvwKqotyzRL7X4/view?usp=sharing"
-
+		{
+			date: 'Feb 2026',
+			issuer: 'University of Wollongong Dubai',
+			title: 'ISDIA 2026 Conference Presentation',
+			badge: 'Certificate',
+			description:
+				'Presented research on AI-powered navigation for visually impaired individuals at ISDIA 2026 in Dubai.',
+			url: 'https://drive.google.com/file/d/1WtL-FQUXskYZJIf4x_yvwKqotyzRL7X4/view?usp=sharing'
 		},
 		{
 			date: 'Oct 2025',
@@ -113,27 +121,27 @@
 	let visibleCertificates = $derived(showAll ? certificates : certificates.slice(0, 3));
 
 	let mainScrollY = $state(0);
-    let scrollContainer = $state();
+	let scrollContainer = $state();
 
 	function handleScrollToTop() {
-        if (scrollContainer) {
-            scrollContainer.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    }
+		if (scrollContainer) {
+			scrollContainer.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		}
+	}
 </script>
 
-<main 
-    bind:this={scrollContainer} 
-    onscroll={(e) => mainScrollY = e.currentTarget.scrollTop} 
-    class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-950"
+<main
+	bind:this={scrollContainer}
+	onscroll={(e) => (mainScrollY = e.currentTarget.scrollTop)}
+	class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-950"
 >
 	<section class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 		<h1 class="mb-6 text-6xl font-extrabold tracking-tight text-white md:text-8xl">{name}</h1>
 		<h2 class="mb-24 text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">{title}</h2>
-    <SocialsBadge />
+		<SocialsBadge />
 	</section>
 	<section class="border-t border-slate-800 px-6 py-20">
 		<div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -154,11 +162,11 @@
 				</p>
 			</div>
 			<div class="flex justify-center lg:justify-end">
-			<img
-				src="/profile1.jpg"
-				alt="Portrait of Arav Goyal"
-				class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl transition-all duration-250 hover:-translate-y-3 hover:scale-105 hover:border-teal-400"
-		/>
+				<img
+					src="/profile1.jpg"
+					alt="Portrait of Arav Goyal"
+					class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl transition-all duration-250 hover:-translate-y-3 hover:scale-105 hover:border-teal-400"
+				/>
 			</div>
 		</div>
 	</section>
@@ -185,7 +193,7 @@
 			</h2>
 			<ul class="flex flex-wrap gap-4">
 				{#each techStack as tech (tech.url)}
-					<TechnologyBadge name={tech.name} iconCode={tech.iconCode} url={tech.url}/>
+					<TechnologyBadge name={tech.name} iconCode={tech.iconCode} url={tech.url} />
 				{/each}
 			</ul>
 		</div>
@@ -250,7 +258,7 @@
 	<footer class="mt-12 border-t-2 border-slate-900 bg-slate-950 px-6 py-16">
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-8">
 			<h2 class="text-3xl font-bold tracking-wide text-teal-400">Let's Connect</h2>
-      <SocialsBadge />
+			<SocialsBadge />
 			<p class="mt-4 text-lg font-medium text-slate-500">
 				© 2026 Arav Goyal. Built with Svelte & Tailwind.
 			</p>
@@ -258,5 +266,3 @@
 	</footer>
 	<BackToTop scrollY={mainScrollY} scrollToTopAction={handleScrollToTop} />
 </main>
-
-
