@@ -143,10 +143,11 @@
 		<h2 class="mb-24 text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">{title}</h2>
 		<SocialsBadge />
 	</section>
-	<section class="border-t border-slate-800 px-6 py-20">
+	<section aria-labelledby="about-heading" class="border-t border-slate-800 px-6 py-20">
 		<div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
 			<div class="space-y-6 text-xl leading-relaxed font-medium text-slate-200">
 				<h2
+					id="about-heading"
 					class="mb-4 inline-block border-b-2 border-teal-500/30 pb-2 text-4xl font-bold tracking-wide text-teal-400"
 				>
 					About Me
@@ -170,9 +171,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="px-6 py-20">
+	<section aria-labelledby="skills-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
-			<h2 class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-teal-400">Skills</h2>
+			<h2 id="skills-heading" class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-teal-400">Skills</h2>
 			<ul
 				class="ml-6 list-outside list-disc space-y-5 text-xl font-medium tracking-wide text-slate-200 marker:text-teal-500 md:text-2xl"
 			>
@@ -184,9 +185,10 @@
 	</section>
 
 	<!-- Technologies & Tooling -->
-	<section class="px-6 py-20">
+	<section aria-labelledby="technologies-heading"class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
 			<h2
+				id="technologies-heading"
 				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold tracking-wide text-teal-400"
 			>
 				Technologies
@@ -198,10 +200,10 @@
 			</ul>
 		</div>
 	</section>
-	<section class="px-6 py-20">
+	<section aria-labelledby="projects-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
 			<div class="mb-12 border-b-2 border-slate-800 pb-8">
-				<h2 class="mb-4 text-4xl font-bold tracking-wide text-teal-400">Projects</h2>
+				<h2 id="projects-heading" class="mb-4 text-4xl font-bold tracking-wide text-teal-400">Projects</h2>
 				<p class="text-xl font-medium text-slate-300">
 					AI solutions, research, and applications I've built.
 				</p>
@@ -220,9 +222,10 @@
 		</div>
 	</section>
 
-	<section class="px-6 py-20">
+	<section aria-labelledby="certificate-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
 			<h2
+				id="certificate-heading"
 				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold tracking-wide text-teal-400"
 			>
 				Certificates & Education
@@ -255,9 +258,9 @@
 
 	<!-- End of main content -->
 	<!-- Link to GitHub and LinkedIn profiles -->
-	<footer class="mt-12 border-t-2 border-slate-900 bg-slate-950 px-6 py-16">
+	<footer aria-labelledby="social-heading" class="mt-12 border-t-2 border-slate-900 bg-slate-950 px-6 py-16">
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-8">
-			<h2 class="text-3xl font-bold tracking-wide text-teal-400">Let's Connect</h2>
+			<h2 id="social-heading" class="text-3xl font-bold tracking-wide text-teal-400">Let's Connect</h2>
 			<SocialsBadge />
 			<p class="mt-4 text-lg font-medium text-slate-500">
 				© 2026 Arav Goyal. Built with Svelte & Tailwind.
