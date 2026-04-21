@@ -143,7 +143,7 @@
 		<h2 class="mb-24 text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">{title}</h2>
 		<SocialsBadge />
 	</header>
-	<section id="main-content" aria-labelle	dby="about-heading" class="border-t border-slate-800 px-6 py-20">
+	<section id="main-content" aria-labelledby="about-heading" class="border-t border-slate-800 px-6 py-20" tabindex="-1">
 		<div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
 			<div class="space-y-6 text-xl leading-relaxed font-medium text-slate-200">
 				<h2
