@@ -37,14 +37,14 @@
 				'Context Aware Guidance for Individuals with Visual Impairments. Accepted for presentation at the ISDIA 2026 conference in Dubai.',
 			tags: ['Accessibility', 'Ai', 'MachineLearning', 'ISDIA2026']
 		},
-		{
-			href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
-			title: 'GeoNavision',
-			type: 'Software',
-			description:
-				'An innovative navigation solution, aimed to help visually impared individuals to navigate the world with confidence. Built using Streamlit, Python, LangChain, Gemini, and Google APIs.',
-			tags: ['AI', 'Navigation', 'Streamlit', 'Python', 'LangChain', 'Gemini', 'Google-APIs']
-		},
+		// {
+		// 	href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
+		// 	title: 'GeoNavision',
+		// 	type: 'Software',
+		// 	description:
+		// 		'An innovative navigation solution, aimed to help visually impared individuals to navigate the world with confidence. Built using Streamlit, Python, LangChain, Gemini, and Google APIs.',
+		// 	tags: ['AI', 'Navigation', 'Streamlit', 'Python', 'LangChain', 'Gemini', 'Google-APIs']
+		// },
 		{
 			href: 'https://github.com/TherealArav/yolo_traficsign_classification_app.git',
 			title: 'Road Sign Classificiation',
