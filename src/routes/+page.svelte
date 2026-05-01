@@ -134,30 +134,45 @@
 </script>
 
 <main
+	id="main-content"
+	tabindex="-1"
 	bind:this={scrollContainer}
 	onscroll={(e) => (mainScrollY = e.currentTarget.scrollTop)}
-	class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-950"
+	class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-50 text-slate-700 focus:outline-none dark:bg-slate-950 dark:text-slate-300"
 >
 	<header class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-		<h1 class="mb-6 text-6xl font-extrabold tracking-tight text-white md:text-8xl">{name}</h1>
-		<h2 class="mb-24 text-3xl font-semibold tracking-wide text-teal-400 md:text-4xl">{title}</h2>
+		<h1
+			class="mb-6 text-6xl font-extrabold tracking-tight text-slate-900 md:text-8xl dark:text-white"
+		>
+			{name}
+		</h1>
+		<h2
+			class="mb-24 text-3xl font-semibold tracking-wide text-teal-700 md:text-4xl dark:text-teal-400"
+		>
+			{title}
+		</h2>
 		<SocialsBadge />
 	</header>
-	<section id="main-content" aria-labelledby="about-heading" class="border-t border-slate-800 px-6 py-20" tabindex="-1">
+	<section
+		id="main-content"
+		aria-labelledby="about-heading"
+		class="border-t border-slate-800 px-6 py-20"
+		tabindex="-1"
+	>
 		<div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
 			<div class="space-y-6 text-xl leading-relaxed font-medium text-slate-200">
 				<h2
 					id="about-heading"
-					class="mb-4 inline-block border-b-2 border-teal-500/30 pb-2 text-4xl font-bold tracking-wide text-teal-400"
+					class="mb-4 inline-block border-b-2 border-slate-900 pb-2 text-4xl font-bold tracking-wide text-slate-900 dark:border-teal-500/30 dark:text-teal-400"
 				>
 					About Me
 				</h2>
-				<p>
+				<p class="text-slate-500 dark:text-slate-200">
 					Hi, I'm Arav, an undergraduate at the University of Wollongong Dubai. I specialize in
 					building accessible AI solutions particularly for people with low vision leveraging
 					Computer Vision and NLP.
 				</p>
-				<p>
+				<p class="text-slate-500 dark:text-slate-200">
 					My experience spans presenting research at ISDIA, developing award winning hackathon
 					software, and driving machine learning projects through to successful deployment.
 				</p>
@@ -173,9 +188,14 @@
 	</section>
 	<section aria-labelledby="skills-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
-			<h2 id="skills-heading" class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-teal-400">Skills</h2>
+			<h2
+				id="skills-heading"
+				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-slate-900 dark:border-slate-800 dark:text-teal-400"
+			>
+				Skills
+			</h2>
 			<ul
-				class="ml-6 list-outside list-disc space-y-5 text-xl font-medium tracking-wide text-slate-200 marker:text-teal-500 md:text-2xl"
+				class="ml-6 list-outside list-disc space-y-5 text-xl font-medium tracking-wide md:text-2xl dark:text-slate-200 dark:marker:text-teal-500"
 			>
 				{#each skills as skill (skill)}
 					<li>{skill}</li>
@@ -185,11 +205,11 @@
 	</section>
 
 	<!-- Technologies & Tooling -->
-	<section aria-labelledby="technologies-heading"class="px-6 py-20">
+	<section aria-labelledby="technologies-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
 			<h2
 				id="technologies-heading"
-				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold tracking-wide text-teal-400"
+				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-slate-900 dark:border-slate-800 dark:text-teal-400"
 			>
 				Technologies
 			</h2>
@@ -203,7 +223,12 @@
 	<section aria-labelledby="projects-heading" class="px-6 py-20">
 		<div class="mx-auto max-w-4xl">
 			<div class="mb-12 border-b-2 border-slate-800 pb-8">
-				<h2 id="projects-heading" class="mb-4 text-4xl font-bold tracking-wide text-teal-400">Projects</h2>
+				<h2
+					id="projects-heading"
+					class="mb-8 pb-4 text-4xl font-bold text-slate-900 dark:border-slate-800 dark:text-teal-400"
+				>
+					Projects
+				</h2>
 				<p class="text-xl font-medium text-slate-300">
 					AI solutions, research, and applications I've built.
 				</p>
@@ -226,7 +251,7 @@
 		<div class="mx-auto max-w-4xl">
 			<h2
 				id="certificate-heading"
-				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold tracking-wide text-teal-400"
+				class="mb-8 border-b-2 border-slate-800 pb-4 text-4xl font-bold text-slate-900 dark:border-slate-800 dark:text-teal-400"
 			>
 				Certificates & Education
 			</h2>
@@ -246,7 +271,7 @@
 				<div class="mt-8 flex justify-center">
 					<button
 						onclick={() => (showAll = !showAll)}
-						class="cursor-pointer rounded-full border-2 border-slate-700 bg-slate-800 px-8 py-3 text-xl font-bold text-teal-400 shadow-lg transition-all hover:border-teal-400 hover:bg-slate-700 focus:ring-4 focus:ring-teal-500 focus:outline-none"
+						class="cursor-pointer rounded-full border-2 border-slate-200 bg-white px-8 py-3 text-xl font-bold text-teal-700 shadow-lg transition-all hover:border-teal-600 hover:bg-slate-100 focus:ring-4 focus:ring-teal-500 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-teal-400 dark:hover:border-teal-400 dark:hover:bg-slate-700"
 						aria-expanded={showAll}
 					>
 						{showAll ? 'Show Less' : 'View All Certificates'}
@@ -258,11 +283,21 @@
 
 	<!-- End of main content -->
 	<!-- Link to GitHub and LinkedIn profiles -->
-	<footer aria-labelledby="social-heading" class="mt-12 border-t-2 border-slate-900 bg-slate-950 px-6 py-16">
+	<footer
+		aria-labelledby="social-heading"
+		class="mt-12 border-t-2 border-slate-200 bg-slate-50 px-6 py-16 dark:border-slate-900 dark:bg-slate-950"
+	>
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-8">
-			<h2 id="social-heading" class="text-3xl font-bold tracking-wide text-teal-400">Let's Connect</h2>
+			<h2
+				id="social-heading"
+				class="text-3xl font-bold tracking-wide text-teal-700 dark:text-teal-400"
+			>
+				Let's Connect
+			</h2>
+
 			<SocialsBadge />
-			<p class="mt-4 text-lg font-medium text-slate-500">
+
+			<p class="mt-4 text-lg font-medium text-slate-600 dark:text-slate-500">
 				© 2026 Arav Goyal. Built with Svelte & Tailwind.
 			</p>
 		</div>

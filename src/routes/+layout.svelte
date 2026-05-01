@@ -1,6 +1,7 @@
 <script>
 	import './layout.css';
-
+    import BackToTop from '$lib/BackToTop.svelte';
+    import ThemeToggle from '$lib/ThemeToggle.svelte';
 	let { children } = $props();
 </script>
 <a 
@@ -9,4 +10,10 @@
 >
     Skip to main content
 </a>
+
+<div class="absolute top-4 right-4 z-40">
+    <ThemeToggle />
+</div>
+
 {@render children()}
+<BackToTop scrollY={0} scrollToTopAction={() => {}} />
