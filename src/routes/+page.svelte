@@ -138,7 +138,7 @@
 	tabindex="-1"
 	bind:this={scrollContainer}
 	onscroll={(e) => (mainScrollY = e.currentTarget.scrollTop)}
-	class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-50 text-slate-700 focus:outline-none dark:bg-slate-950 dark:text-slate-300"
+	class="no-scrollbar h-screen overflow-y-auto scroll-smooth bg-slate-200 text-slate-700 focus:outline-none dark:bg-slate-950 dark:text-slate-300"
 >
 	<header class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
 		<h1
@@ -167,12 +167,12 @@
 				>
 					About Me
 				</h2>
-				<p class="text-slate-500 dark:text-slate-200">
+				<p class="text-slate-700 dark:text-slate-200">
 					Hi, I'm Arav, an undergraduate at the University of Wollongong Dubai. I specialize in
 					building accessible AI solutions particularly for people with low vision leveraging
 					Computer Vision and NLP.
 				</p>
-				<p class="text-slate-500 dark:text-slate-200">
+				<p class="text-slate-700 dark:text-slate-200">
 					My experience spans presenting research at ISDIA, developing award winning hackathon
 					software, and driving machine learning projects through to successful deployment.
 				</p>
@@ -229,7 +229,7 @@
 				>
 					Projects
 				</h2>
-				<p class="text-xl font-medium text-slate-300">
+				<p class="text-xl font-medium text-slate-700 dark:text-slate-200">
 					AI solutions, research, and applications I've built.
 				</p>
 			</div>
@@ -285,7 +285,7 @@
 	<!-- Link to GitHub and LinkedIn profiles -->
 	<footer
 		aria-labelledby="social-heading"
-		class="mt-12 border-t-2 border-slate-200 bg-slate-50 px-6 py-16 dark:border-slate-900 dark:bg-slate-950"
+		class="mt-12 border-t-2 border-slate-200 bg-slate-200 px-6 py-16 dark:border-slate-900 dark:bg-slate-950"
 	>
 		<div class="mx-auto flex max-w-4xl flex-col items-center gap-8">
 			<h2
