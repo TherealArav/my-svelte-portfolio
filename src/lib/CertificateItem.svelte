@@ -10,7 +10,7 @@
             <span class="font-mono text-xl font-medium text-slate-600 dark:text-slate-400">{date}</span>
         </div>
 
-        <div class="flex w-full flex-col gap-3">
+        <div class="flex w-full flex-col gap-3 border-l-2 border-slate-200 pl-4 sm:pl-8 dark:border-slate-800">
             
             <header class="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
                 <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100">
