@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
 
 
 @utility no-scrollbar {
@@ -11,6 +13,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+@theme {
+  --font-vidaloka: "Vidaloka", serif;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));

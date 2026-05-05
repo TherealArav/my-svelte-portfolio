@@ -4,9 +4,11 @@
 	import CertificateItem from '$lib/CertificateItem.svelte';
 	import SocialsBadge from '$lib/SocialsBadge.svelte';
 	import BackToTop from '$lib/BackToTop.svelte';
+	import FlipCard from '$lib/FlipCard.svelte';
 
 	const name = 'Arav Goyal';
 	const title = 'AI & Big Data Engineer';
+
 	const techStack = [
 		{ name: 'Python', iconCode: 'logos:python', url: 'https://www.python.org/' },
 		{ name: 'TensorFlow', iconCode: 'logos:tensorflow', url: 'https://www.tensorflow.org/' },
@@ -37,14 +39,14 @@
 				'Context Aware Guidance for Individuals with Visual Impairments. Accepted for presentation at the ISDIA 2026 conference in Dubai.',
 			tags: ['Accessibility', 'Ai', 'MachineLearning', 'ISDIA2026']
 		},
-		// {
-		// 	href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
-		// 	title: 'GeoNavision',
-		// 	type: 'Software',
-		// 	description:
-		// 		'An innovative navigation solution, aimed to help visually impared individuals to navigate the world with confidence. Built using Streamlit, Python, LangChain, Gemini, and Google APIs.',
-		// 	tags: ['AI', 'Navigation', 'Streamlit', 'Python', 'LangChain', 'Gemini', 'Google-APIs']
-		// },
+		{
+			href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
+			title: 'GeoNavision',
+			type: 'Software',
+			description:
+				'An innovative navigation solution, aimed to help visually impared individuals to navigate the world with confidence. Built using Streamlit, Python, LangChain, Gemini, and Google APIs.',
+			tags: ['AI', 'Navigation', 'Streamlit', 'Python', 'LangChain', 'Gemini', 'Google-APIs']
+		},
 		{
 			href: 'https://github.com/TherealArav/yolo_traficsign_classification_app.git',
 			title: 'Road Sign Classificiation',
@@ -178,11 +180,7 @@
 				</p>
 			</div>
 			<div class="flex justify-center lg:justify-end">
-				<img
-					src="/profile1.jpg"
-					alt="Portrait of Arav Goyal"
-					class="w-full max-w-md rounded-2xl border-4 border-slate-700 object-cover shadow-2xl transition-all duration-250 hover:-translate-y-3 hover:scale-105 hover:border-teal-400"
-				/>
+				<FlipCard imageSrc="/profile1.jpg" altText="Portrait of Arav Goyal" />
 			</div>
 		</div>
 	</section>
