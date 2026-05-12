@@ -71,6 +71,13 @@
 							Docker
 						</a>
 					</div>
+					<div class="mt-8 flex w-full justify-center">
+						<img
+							src="/aiSymbol.svg"
+							alt="AI Symbol"
+							class="h-10 w-10 opacity-70 transition-opacity hover:opacity-100"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
