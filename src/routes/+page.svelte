@@ -40,7 +40,7 @@
 			tags: ['Accessibility', 'Ai', 'MachineLearning', 'ISDIA2026']
 		},
 		{
-			href: 'https://geonavision-hc9dvzy96cb8auq9bwxzgq.streamlit.app/',
+			href: 'https://youtu.be/dz-I23rogpE',
 			title: 'GeoNavision',
 			type: 'Software',
 			description:
