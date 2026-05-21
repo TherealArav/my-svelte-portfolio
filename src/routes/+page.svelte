@@ -40,8 +40,8 @@
 			tags: ['Accessibility', 'Ai', 'MachineLearning', 'ISDIA2026']
 		},
 		{
-			href: 'https://youtu.be/dz-I23rogpE',
-			title: 'GeoNavision',
+			href: 'https://nearbypois-ltwvvupvpwktby2s5cafqq.streamlit.app/',
+			title: 'Find Nearby POIs',
 			type: 'Software',
 			description:
 				'An innovative navigation solution, aimed to help visually impared individuals to navigate the world with confidence. Built using Streamlit, Python, LangChain, Gemini, and Google APIs.',
